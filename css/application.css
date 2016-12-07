@@ -1,0 +1,81 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+nav {
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto; }
+  nav::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+* {
+  border: 0 dotted tomato;
+  box-sizing: border-box;
+  height: 100px;
+  margin: 0;
+  padding: 0; }
+
+.wrap {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrap::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.row {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .row:last-child {
+    margin-right: 0; }
+
+.main {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-right: 0; }
+  .main:last-child {
+    margin-right: 0; }
+
+.feature {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  background: black;
+  margin-right: 1.15%; }
+  .feature:last-child {
+    margin-right: 0; }
+
+.secondary {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background: grey;
+  margin-right: 0; }
+  .secondary:last-child {
+    margin-right: 0; }
+
+.tile {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  height: 50%;
+  width: 34.1%;
+  background: red;
+  margin-right: 0; }
+  .tile:last-child {
+    margin-right: 0; }
+
+/*# sourceMappingURL=application.css.map */

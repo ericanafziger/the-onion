@@ -1,0 +1,37 @@
+* {
+  border: 0 dotted tomato;
+  box-sizing: border-box;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.wrap {
+  @include outer-container(1920px);
+}
+.row {
+  @include span-columns(12);
+}
+.main {
+  @include span-columns(8 of 12);
+  margin-right: 0;
+}
+.feature {
+  @include span-columns(8 of 12);
+  background: black;
+  margin-right: 1.15%;
+}
+.secondary {
+  @include span-columns(4 of 12);
+  background: grey;
+  margin-right: 0;
+}
+.tile {
+  @include span-columns(4 of 12);
+  height: 50%;
+  width: 34.1%;
+  background: red;
+  margin-right: 0;
+}

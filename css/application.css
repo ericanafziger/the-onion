@@ -95,7 +95,7 @@ img {
   width: 31.76157%;
   border-right: #cacaca 1px solid;
   border-left: #cacaca 1px solid;
-  padding: 1.15%; }
+  padding: 0 1.15% 1.15% 1.15%; }
   .secondary:last-child {
     margin-right: 0; }
   @media screen and (max-width: 1000px) {

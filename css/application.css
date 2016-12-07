@@ -48,11 +48,19 @@ img {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 65.88078%;
+  width: 74.41059%;
   margin: 0;
   height: 100%; }
   .main:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 1000px) {
+    .main {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .main:last-child {
+        margin-right: 0; } }
 
 .feature {
   float: left;
@@ -79,9 +87,9 @@ img {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%;
+  width: 23.23176%;
   height: 50%;
-  width: 34.1%;
+  width: 26.1%;
   margin-right: 0;
   margin-left: -.75%; }
   .tile:last-child {
@@ -114,8 +122,5 @@ h4 {
 .text ul {
   padding-top: 5px;
   padding-left: 20px; }
-
-.tile img {
-  width: 320px; }
 
 /*# sourceMappingURL=application.css.map */

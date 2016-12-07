@@ -20,18 +20,45 @@
   height: 100%;
   @media screen and #{$medium-break} {
     @include span-columns(12 of 12);
+    border-bottom: $border-color 1px solid;
+    margin-bottom: 15px;
+  }
+  @media screen and #{$small-break} {
+    border-bottom: none;
   }
 }
 .feature {
   @include span-columns(8 of 12);
   margin-right: 0%;
   padding-right: 1.15%;
+  @media screen and #{$small-break} {
+    @include span-columns(12 of 12);
+    padding: 15px 0;
+    p {
+      display: none;
+    }
+  }
 }
 .secondary {
   @include span-columns(4 of 12);
   border-right: $border-color 1px solid;
   border-left: $border-color 1px solid;
   padding: 1.15%;
+  @media screen and #{$medium-break} {
+    border-right: none;
+    width: 34.1%;
+    padding-right: 0;
+  }
+  @media screen and #{$small-break} {
+    @include span-columns(12 of 12);
+    width: 100%;
+    border-left: none;
+    padding: 15px 0;
+    border-top: 1px solid $border-color;
+    img, p, ul, h4:last-of-type {
+      display: none;
+    }
+  }
 }
 .tile {
   @include span-columns(3 of 12);
@@ -39,4 +66,19 @@
   width: 26.1%;
   margin-right: 0;
   margin-left: -.75%;
+  @media screen and #{$medium-break} {
+    @include span-columns(6 of 12);
+    padding-left: 1.15%;
+    width: 49.5%;
+  }
+  @media screen and #{$small-break} {
+    @include span-columns(12 of 12);
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: $border-color 1px solid;
+    img {
+      display: none;
+    }
+  }
 }

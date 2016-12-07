@@ -58,9 +58,14 @@ img {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 100%; }
+      width: 100%;
+      border-bottom: #cacaca 1px solid;
+      margin-bottom: 15px; }
       .main:last-child {
         margin-right: 0; } }
+  @media screen and (max-width: 600px) {
+    .main {
+      border-bottom: none; } }
 
 .feature {
   float: left;
@@ -71,6 +76,17 @@ img {
   padding-right: 1.15%; }
   .feature:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 600px) {
+    .feature {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      padding: 15px 0; }
+      .feature:last-child {
+        margin-right: 0; }
+      .feature p {
+        display: none; } }
 
 .secondary {
   float: left;
@@ -82,6 +98,25 @@ img {
   padding: 1.15%; }
   .secondary:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 1000px) {
+    .secondary {
+      border-right: none;
+      width: 34.1%;
+      padding-right: 0; } }
+  @media screen and (max-width: 600px) {
+    .secondary {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      width: 100%;
+      border-left: none;
+      padding: 15px 0;
+      border-top: 1px solid #cacaca; }
+      .secondary:last-child {
+        margin-right: 0; }
+      .secondary img, .secondary p, .secondary ul, .secondary h4:last-of-type {
+        display: none; } }
 
 .tile {
   float: left;
@@ -94,6 +129,30 @@ img {
   margin-left: -.75%; }
   .tile:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 1000px) {
+    .tile {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      padding-left: 1.15%;
+      width: 49.5%; }
+      .tile:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 600px) {
+    .tile {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-top: #cacaca 1px solid; }
+      .tile:last-child {
+        margin-right: 0; }
+      .tile img {
+        display: none; } }
 
 body {
   color: black; }
@@ -120,7 +179,6 @@ h4 {
 .text p {
   margin-bottom: 20px; }
 .text ul {
-  padding-top: 5px;
-  padding-left: 20px; }
+  padding: 5px 0 20px 20px; }
 
 /*# sourceMappingURL=application.css.map */

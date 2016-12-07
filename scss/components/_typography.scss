@@ -1,0 +1,32 @@
+body {
+  color: $text-color;
+}
+h1 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  &:hover {
+    color: $text-hover;
+    cursor: pointer;
+  }
+}
+p {
+  font-size: 0.9em;
+}
+li {
+  font-size: 0.8em;
+  color: $onion-green;
+}
+h4 {
+  margin: 10px 0;
+  font-size: 1em;
+  line-height: 1.1em;
+}
+.text {
+  p {
+    margin-bottom: 20px;
+  }
+  ul {
+    padding-top: 5px;
+    padding-left: 20px;
+  }
+}

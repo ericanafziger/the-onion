@@ -1,0 +1,15 @@
+//color variables
+
+$primary-color: black;
+$secondary-color: #646464;
+$onion-green: #006b3a;
+$onion-green-light: tint($onion-green, 30%);
+$onion-green-ligher: tint($onion-green, 10%);
+
+
+//color uses
+
+$text-color: $primary-color;
+$text-hover: $secondary-color;
+$border-color: lighten($secondary-color, 40%);
+$links-color: $onion-green-light;

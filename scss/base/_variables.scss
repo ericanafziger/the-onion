@@ -5,7 +5,7 @@ $secondary-color: #646464;
 $onion-green: #006b3a;
 $onion-green-light: tint($onion-green, 30%);
 $onion-green-ligher: tint($onion-green, 10%);
-
+$button-text-color: white;
 
 //color uses
 
@@ -17,4 +17,5 @@ $links-color: $onion-green-light;
 //breakpoints
 
 $medium-break: '(max-width: 1000px)';
+$nav-break: '(max-width: 768px)';
 $small-break: '(max-width: 600px)';

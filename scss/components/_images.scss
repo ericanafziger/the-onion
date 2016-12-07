@@ -1,4 +1,13 @@
-.tile {
-  img {
-  }
+img {
+  max-width: 100%;
+  border: 1px solid $border-color;
+}
+.logo img {
+    position: relative;
+    height: 42.3px;
+    display: block;
+    top: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
 }

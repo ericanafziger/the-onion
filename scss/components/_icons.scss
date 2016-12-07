@@ -1,0 +1,19 @@
+#menu-bars {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border: 1px solid $border-color;
+  padding: 5px 10px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+#menu-bars:target + #hidden {
+  display: block;
+}
+#hidden {
+  display: none;
+}
+#hidden:target{
+  display: none;
+}

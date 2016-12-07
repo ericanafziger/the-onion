@@ -1,0 +1,47 @@
+nav {
+  @include outer-container(100vw);
+}
+.logo {
+  height: 90px;
+}
+.tag {
+  height: 35px;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  .green-text {
+    background: $onion-green;
+    color: $button-text-color;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 8px;
+    letter-spacing: 0.5px;
+  }
+}
+.links {
+  height: 40px;
+  border-bottom: 1px solid tomato;
+  display: flex;
+  align-items: center;
+  ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  li {
+  color: $text-color;
+  font-size: 1em;
+  font-weight: bold;
+  }
+}
+
+.search {
+  @media screen and #{$medium-break} {
+    display: none;
+  }
+}

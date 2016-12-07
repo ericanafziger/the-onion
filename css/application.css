@@ -7,19 +7,6 @@ html {
 body {
   font-family: 'Playfair Display', serif; }
 
-nav {
-  max-width: 100vw;
-  margin-left: auto;
-  margin-right: auto; }
-  nav::after {
-    clear: both;
-    content: "";
-    display: block; }
-
-img {
-  max-width: 100%;
-  border: 1px solid #cacaca; }
-
 * {
   border: 0 dotted tomato;
   box-sizing: border-box;
@@ -154,6 +141,54 @@ img {
       .tile img {
         display: none; } }
 
+nav {
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto; }
+  nav::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.logo {
+  height: 90px; }
+
+.tag {
+  height: 35px;
+  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca; }
+  .tag .green-text {
+    background: #006b3a;
+    color: white;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 8px;
+    letter-spacing: 0.5px; }
+
+.links {
+  height: 40px;
+  border-bottom: 1px solid tomato;
+  display: flex;
+  align-items: center; }
+  .links ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  .links li {
+    color: black;
+    font-size: 1em;
+    font-weight: bold; }
+
+@media screen and (max-width: 1000px) {
+  .search {
+    display: none; } }
+
 body {
   color: black; }
 
@@ -179,6 +214,37 @@ h4 {
 .text p {
   margin-bottom: 20px; }
 .text ul {
-  padding: 5px 0 20px 20px; }
+  padding: 5px 0 30px 20px; }
+
+#menu-bars {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border: 1px solid #cacaca;
+  padding: 5px 10px; }
+  #menu-bars:hover {
+    cursor: pointer; }
+
+#menu-bars:target + #hidden {
+  display: block; }
+
+#hidden {
+  display: none; }
+
+#hidden:target {
+  display: none; }
+
+img {
+  max-width: 100%;
+  border: 1px solid #cacaca; }
+
+.logo img {
+  position: relative;
+  height: 42.3px;
+  display: block;
+  top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none; }
 
 /*# sourceMappingURL=application.css.map */

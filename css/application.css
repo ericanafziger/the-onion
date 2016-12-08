@@ -413,7 +413,14 @@ h4 {
       border-bottom: none; }
   #hidden .bottom-drawer {
     background: #e7e7e7;
-    border-top: 1px solid #cacaca; }
+    border-top: 1px solid #cacaca;
+    min-height: 54.3%; }
+    #hidden .bottom-drawer p {
+      font-size: 0.7em;
+      font-family: "Georgia",Times New Roman,serif;
+      margin: 50px 35px 0 35px;
+      text-align: center;
+      font-style: italic; }
     #hidden .bottom-drawer h4 {
       text-transform: uppercase;
       margin: 0 5px;

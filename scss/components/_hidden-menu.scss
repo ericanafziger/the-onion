@@ -56,6 +56,14 @@
   .bottom-drawer {
     background: tint($border-color, 55%);
     border-top: 1px solid $border-color;
+    min-height: 54.3%;
+    p {
+      font-size: 0.7em;
+      font-family: "Georgia",Times New Roman,serif;
+      margin: 50px 35px 0 35px;
+      text-align: center;
+      font-style: italic;
+    }
     h4 {
       text-transform: uppercase;
       margin: 0 5px;

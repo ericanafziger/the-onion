@@ -1,0 +1,7 @@
+// social media mixins
+
+@mixin social-colors($social, $color) {
+  .fa-#{$social} {
+    background: $color;
+  }
+}

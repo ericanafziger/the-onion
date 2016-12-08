@@ -383,40 +383,105 @@ h4 {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
   overflow: hidden;
   display: none; }
 
 #hidden {
   position: absolute;
+  transition: all ease-in 500ms;
   height: 100vh;
   width: 300px;
   background: #F9FAFA;
-  padding: 20px;
-  z-index: 2; }
+  z-index: 2;
+  overflow: auto; }
   #hidden img {
     width: 185px;
     border: none;
-    margin-bottom: 30px; }
+    margin: 30px 20px; }
+    #hidden img:hover {
+      cursor: pointer;
+      opacity: 0.6; }
   #hidden h4 {
     font-size: 0.9em;
     text-indent: 15px;
     line-height: 3em;
-    margin: 0;
+    margin: 0 20px;
     border-bottom: 1px solid #cacaca; }
+    #hidden h4:nth-child(9) {
+      border-bottom: none; }
+  #hidden .bottom-drawer {
+    background: #e7e7e7;
+    border-top: 1px solid #cacaca; }
+    #hidden .bottom-drawer h4 {
+      text-transform: uppercase;
+      margin: 0 5px;
+      border: none; }
+      #hidden .bottom-drawer h4:nth-child(2) {
+        text-indent: 0;
+        margin: 0 20px;
+        border-top: 1px solid #cacaca;
+        border-bottom: 1px solid #cacaca; }
 
 .hide {
   position: absolute;
   width: 50px;
   right: 10px;
-  top: 10px;
+  top: 20px;
   display: block;
   transform: rotate(45deg);
   font-weight: lighter;
   font-size: 3em; }
   .hide:hover {
     cursor: pointer; }
+
+.social-icons {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 90%;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .social-icons:first-of-type {
+    margin-top: 15%; }
+  .social-icons i {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    float: left;
+    width: 41.7px;
+    height: 38px;
+    text-align: center;
+    font-size: 1.3em;
+    color: white; }
+
+.fa-instagram {
+  background: #4B82A3; }
+
+.fa-facebook {
+  background: #4163AF; }
+
+.fa-twitter {
+  background: #00ACED; }
+
+.fa-pinterest {
+  background: #CD2028; }
+
+.fa-rss {
+  background: #FA9B39; }
+
+.fa-youtube {
+  background: #E52D27; }
+
+.fa-google {
+  background: #DB4933; }
+
+.fa-tumblr {
+  background: #3A5D7D; }
 
 img {
   max-width: 100%;

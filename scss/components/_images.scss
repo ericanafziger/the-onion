@@ -10,4 +10,9 @@ img {
     margin-left: auto;
     margin-right: auto;
     border: none;
+    @media #{$nav-break} {
+      height: 27.91px;
+      top: 10px;
+      margin-left: 70px;
+    }
 }

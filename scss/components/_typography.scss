@@ -16,16 +16,52 @@ li {
   font-size: 0.8em;
   color: $onion-green;
 }
+a {
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+  &:visited {
+    color: $text-color;
+  }
+}
 h4 {
   margin: 10px 0;
   font-size: 1em;
   line-height: 1.1em;
+  &:hover {
+    color: $text-hover;
+    cursor: pointer;
+  }
 }
 .text {
   p {
     margin-bottom: 20px;
   }
   ul {
-    padding: 5px 0 30px 20px;
+    padding: 5px 0 10px 20px;
+  }
+  a {
+    color: $links-color;
+    &:hover {
+      text-color: $links-hover;
+    }
+  }
+}
+.political-links {
+  a {
+    padding-top: 5px;
+    text-decoration: none;
+    font-size: .75em;
+    text-transform: uppercase;
+    color: $links-blue;
+    &:first-child {
+      font-weight: 700;
+      float: left;
+    }
+    &:last-child {
+      float: right;
+      font-family: sans-serif;
+    }
   }
 }

@@ -1,9 +1,13 @@
 #menu-bars {
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 30px;
   border: 1px solid $border-color;
-  padding: 5px 10px;
+  padding: 7px 10px;
+  @media #{$nav-break} {
+    top: 6px;
+    left: 10px;
+  }
   &:hover {
     cursor: pointer;
   }

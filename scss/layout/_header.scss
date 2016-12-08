@@ -3,11 +3,19 @@ nav {
 }
 .logo {
   height: 90px;
+  @media #{$nav-break} {
+    height: 50px;
+    border-bottom: 1px solid $border-color;
+    box-shadow: 1px 1px 4px 0px lighten($border-color, 8%);
+  }
 }
 .tag {
   height: 35px;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
+  @media #{$nav-break} {
+    display: none;
+  }
   .green-text {
     background: $onion-green;
     color: $button-text-color;
@@ -23,9 +31,14 @@ nav {
 }
 .links {
   height: 40px;
-  border-bottom: 1px solid tomato;
+  border-bottom: 1px solid $border-color;
   display: flex;
   align-items: center;
+  padding: 0 20px;
+  box-shadow: 1px 1px 4px 0px lighten($border-color, 8%);
+  @media #{$nav-break} {
+    display: none;
+  }
   ul{
     width: 100%;
     list-style-type: none;
@@ -35,8 +48,11 @@ nav {
   }
   li {
   color: $text-color;
-  font-size: 1em;
+  font-size: .95em;
   font-weight: bold;
+  &:nth-of-type(7) {
+    color: lighten($text-hover, 20%);
+  }
   }
 }
 

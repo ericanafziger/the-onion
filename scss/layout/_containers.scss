@@ -6,19 +6,21 @@
 }
 .wrap {
   @include outer-container(1260px);
+  margin-top: 15px;
 }
 .row {
   @include span-columns(12);
-  padding: 0 2%;
+  padding: 0 4%;
+  margin-bottom: 20px;
 }
+// ======================= primary content sections ===========================
+
 .main {
   @include span-columns(9 of 12);
   margin: 0;
   height: 100%;
   @media screen and #{$medium-break} {
     @include span-columns(12 of 12);
-    border-bottom: $border-color 1px solid;
-    margin-bottom: 15px;
   }
   @media screen and #{$small-break} {
     border-bottom: none;
@@ -45,6 +47,7 @@
     border-right: none;
     width: 34.1%;
     padding-right: 0;
+    margin-bottom: 20px;
   }
   @media screen and #{$small-break} {
     @include span-columns(12 of 12);
@@ -52,30 +55,81 @@
     border-left: none;
     padding: 15px 0;
     border-top: 1px solid $border-color;
+    margin-bottom: 0;
     img, p, ul, h4:last-of-type {
       display: none;
     }
   }
 }
-.tile {
-  @include span-columns(3 of 12);
-  height: 50%;
-  width: 26.1%;
-  margin-right: 0;
-  margin-left: -.75%;
+.side-tiles {
+  @include span-columns(12 of 12);
+  margin-left: -8px;
+  width: 26.2%;
   @media screen and #{$medium-break} {
-    @include span-columns(6 of 12);
-    padding-left: 1.15%;
-    width: 49.5%;
+    @include span-columns(12 of 12);
+    margin-left: 0px;
+    border-top: 1px solid $border-color;
+    padding-top: 15px;
   }
   @media screen and #{$small-break} {
     @include span-columns(12 of 12);
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-top: $border-color 1px solid;
-    img {
-      display: none;
+    border-top: none;
+    padding-top: 0;
+  }
+  .tile {
+    @include span-columns(12 of 12);
+    @media screen and #{$medium-break} {
+      @include span-columns(6 of 12);
+    }
+    @media screen and #{$small-break} {
+      @include span-columns(12 of 12);
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-top: $border-color 1px solid;
+      img {
+        display: none;
+      }
+    }
+  }
+}
+// ======================= political-links section ===========================
+.gradient-bar {
+  @include span-columns(8.8 of 12);
+  margin-right: 0;
+  height: 5px;
+  background-color: #b42a29;
+  background-image: -webkit-linear-gradient(left,#b42a29 0,#2752b6 100%);
+  @media #{$medium-break} {
+    @include span-columns(12 of 12);
+    margin-right: 0;
+  }
+}
+
+.political-links {
+  @include span-columns(8.8 of 12);
+  margin-right: 0;
+  height: 30px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: $border-color 1px solid;
+  @include clearfix;
+  @media #{$medium-break} {
+    @include span-columns(12 of 12);
+  }
+}
+.bottom-tiles {
+  @include span-columns(8.8 of 12);
+  @media #{$medium-break} {
+    @include span-columns(12 of 12);
+  }
+  .tile {
+    @include span-columns(4 of 12);
+    @media #{$small-break} {
+      @include span-columns(12 of 12);
+      &:nth-child(n+2) {
+        display: none;
+      }
     }
   }
 }

@@ -534,6 +534,16 @@ img {
   max-width: 100%;
   border: 1px solid #cacaca; }
 
+.small-logo {
+  display: none; }
+  @media (max-width: 1000px) {
+    .small-logo {
+      display: block; } }
+
+@media (max-width: 1000px) {
+  .article .logo .main {
+    display: none; } }
+
 .logo img {
   position: relative;
   height: 42.3px;

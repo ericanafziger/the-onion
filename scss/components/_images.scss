@@ -2,6 +2,21 @@ img {
   max-width: 100%;
   border: 1px solid $border-color;
 }
+.small-logo {
+  display: none;
+  @media #{$medium-break} {
+    display: block;
+  }
+}
+.article {
+  .logo {
+    .main {
+      @media #{$medium-break} {
+      display: none;
+      }
+    }
+  }
+}
 .logo img {
     position: relative;
     height: 42.3px;

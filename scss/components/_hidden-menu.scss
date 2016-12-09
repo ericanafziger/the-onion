@@ -96,36 +96,3 @@
     cursor: pointer;
   }
 }
-.social-icons {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top:5%;
-  width: 90%;
-  padding: 0px 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  &:first-of-type {
-    margin-top: 15%;
-  }
-  i {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    float: left;
-    width: 41.7px;
-    height: 38px;
-    text-align: center;
-    font-size: 1.3em;
-    color: white;
-  }
-}
-@include social-colors (instagram, $instagram);
-@include social-colors (facebook, $facebook);
-@include social-colors (twitter, $twitter);
-@include social-colors (pinterest, $pinterest);
-@include social-colors (rss, $rss);
-@include social-colors (youtube, $youtube);
-@include social-colors (google, $google);
-@include social-colors (tumblr, $tumblr);

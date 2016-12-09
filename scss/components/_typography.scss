@@ -18,8 +18,10 @@ li {
 }
 a {
   text-decoration: none;
+  color: $text-color;
   &:hover {
     cursor: pointer;
+    color: $text-hover;
   }
   &:visited {
     color: $text-color;
@@ -64,4 +66,44 @@ h4 {
       font-family: sans-serif;
     }
   }
+}
+// main article text ===============
+.article-main {
+  h1 {
+    margin: 30px 0;
+    font-size: 2.2em;
+    padding-top: 30px;
+    border-top: 3px solid $onion-green;
+
+    &:hover {
+      cursor: default;
+      color: $text-color;
+    }
+  }
+  p {
+    font-family: "Georgia",Times New Roman,serif;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  h5 {
+    font-size: .8em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .date {
+    font-size: .9em;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .volume {
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 35px;
+    font-size: .9em;
+  }
+}
+.article-caption p {
+  margin-bottom: 30px;
+  font-style: italic;
+  font-family: "Georgia",Times New Roman,serif;
+  font-size: 0.8em;
 }

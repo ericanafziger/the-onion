@@ -246,6 +246,40 @@ body {
         .bottom-tiles .tile:nth-child(n+2) {
           display: none; } }
 
+.article-wrap {
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px; }
+  .article-wrap::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .article-wrap .article-row {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding: 0 4%;
+    margin-bottom: 20px; }
+    .article-wrap .article-row:last-child {
+      margin-right: 0; }
+    .article-wrap .article-row .center-column {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%; }
+      .article-wrap .article-row .center-column:last-child {
+        margin-right: 0; }
+    .article-wrap .article-row .left-side-column {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%;
+      min-width: 160px; }
+      .article-wrap .article-row .left-side-column:last-child {
+        margin-right: 0; }
+
 nav {
   max-width: 100vw;
   margin-left: auto;
@@ -363,9 +397,11 @@ li {
   color: #006b3a; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: black; }
   a:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    color: #646464; }
   a:visited {
     color: black; }
 
@@ -398,6 +434,89 @@ h4 {
   .political-links a:last-child {
     float: right;
     font-family: sans-serif; }
+
+.article-main h1 {
+  margin: 30px 0;
+  font-size: 2.2em;
+  padding-top: 30px;
+  border-top: 3px solid #006b3a; }
+  .article-main h1:hover {
+    cursor: default;
+    color: black; }
+.article-main p {
+  font-family: "Georgia",Times New Roman,serif;
+  font-size: 1em;
+  line-height: 1.5em; }
+.article-main h5 {
+  font-size: .8em;
+  text-transform: uppercase;
+  margin-bottom: 4px; }
+.article-main .date {
+  font-size: .9em;
+  display: block;
+  margin-bottom: 10px; }
+.article-main .volume {
+  border-bottom: 1px solid #cacaca;
+  padding-bottom: 35px;
+  font-size: .9em; }
+
+.article-caption p {
+  margin-bottom: 30px;
+  font-style: italic;
+  font-family: "Georgia",Times New Roman,serif;
+  font-size: 0.8em; }
+
+.social-icons {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 90%;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .social-icons:first-of-type {
+    margin-top: 15%; }
+  .social-icons i {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    float: left;
+    width: 41.7px;
+    height: 38px;
+    text-align: center;
+    font-size: 1.3em;
+    color: white; }
+
+.article-wrap .social-icons {
+  margin-top: 30px;
+  margin-left: -5px;
+  padding: 0; }
+
+.fa-instagram {
+  background: #4B82A3; }
+
+.fa-facebook {
+  background: #4163AF; }
+
+.fa-twitter {
+  background: #00ACED; }
+
+.fa-pinterest {
+  background: #CD2028; }
+
+.fa-rss {
+  background: #FA9B39; }
+
+.fa-youtube {
+  background: #E52D27; }
+
+.fa-google {
+  background: #DB4933; }
+
+.fa-tumblr {
+  background: #3A5D7D; }
 
 .stop-scroll {
   overflow: hidden; }
@@ -483,53 +602,6 @@ h4 {
   .hide:hover {
     cursor: pointer; }
 
-.social-icons {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  width: 90%;
-  padding: 0px 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-  .social-icons:first-of-type {
-    margin-top: 15%; }
-  .social-icons i {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    float: left;
-    width: 41.7px;
-    height: 38px;
-    text-align: center;
-    font-size: 1.3em;
-    color: white; }
-
-.fa-instagram {
-  background: #4B82A3; }
-
-.fa-facebook {
-  background: #4163AF; }
-
-.fa-twitter {
-  background: #00ACED; }
-
-.fa-pinterest {
-  background: #CD2028; }
-
-.fa-rss {
-  background: #FA9B39; }
-
-.fa-youtube {
-  background: #E52D27; }
-
-.fa-google {
-  background: #DB4933; }
-
-.fa-tumblr {
-  background: #3A5D7D; }
-
 img {
   max-width: 100%;
   border: 1px solid #cacaca; }
@@ -562,5 +634,8 @@ img {
   height: 25px;
   top: 10px;
   margin-left: 60px; }
+
+.article-wrap img {
+  border: none; }
 
 /*# sourceMappingURL=application.css.map */

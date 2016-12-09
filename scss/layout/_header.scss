@@ -61,3 +61,33 @@ nav {
     display: none;
   }
 }
+//========== Nav Styling for Articles
+nav.article {
+  @include outer-container(100vw);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid $border-color;
+  box-shadow: 1px 1px 4px 0px lighten($border-color, 8%);
+  @include clearfix;
+  .logo {
+    width: 100%;
+    height: 50px;
+    float: left;
+  }
+  .top-headlines {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65em;
+    height: 50px;
+    width: 148.5px;
+    color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    background: $onion-green;
+  }
+}
